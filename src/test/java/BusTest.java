@@ -22,4 +22,9 @@ public class BusTest {
     public void hasCapacity() {
         assertEquals(20, bus.getCapacity());
     }
+
+    @Test
+    public void hasPassengers() {
+        assertEquals(0, bus.getPassengerCount());
+    }
 }
