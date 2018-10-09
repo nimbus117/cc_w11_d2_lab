@@ -8,7 +8,7 @@ public class Bus {
 
     public Bus(String destination) {
         this.destination = destination;
-        capacity = 20;
+        capacity = 3;
         passengers = new ArrayList<>();
     }
 
@@ -22,5 +22,11 @@ public class Bus {
 
     public int getPassengerCount() {
         return passengers.size();
+    }
+
+    public void addPassenger(Person person) {
+        if (capacity - passengers.size() >= 1) {
+            passengers.add(person);
+        }
     }
 }

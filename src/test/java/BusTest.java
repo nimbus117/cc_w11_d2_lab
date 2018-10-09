@@ -20,11 +20,28 @@ public class BusTest {
 
     @Test
     public void hasCapacity() {
-        assertEquals(20, bus.getCapacity());
+        assertEquals(3, bus.getCapacity());
     }
 
     @Test
     public void hasPassengers() {
         assertEquals(0, bus.getPassengerCount());
     }
+
+    @Test
+    public void canAddPassenger() {
+        bus.addPassenger(person);
+        assertEquals(1, bus.getPassengerCount());
+    }
+
+    @Test
+    public void canAddPassengerCapacityFull() {
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        assertEquals(3, bus.getPassengerCount());
+    }
+
+
 }
