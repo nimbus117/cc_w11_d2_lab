@@ -17,4 +17,9 @@ public class BusTest {
     public void hasDestination() {
         assertEquals("Leith", bus.getDestination());
     }
+
+    @Test
+    public void hasCapacity() {
+        assertEquals(20, bus.getCapacity());
+    }
 }
