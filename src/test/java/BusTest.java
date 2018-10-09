@@ -4,11 +4,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class BusTest {
-    Person person1;
-    Person person2;
-    Person person3;
-    Person person4;
-    Bus bus;
+    private Person person1;
+    private Person person2;
+    private Person person3;
+    private Person person4;
+    private Bus bus;
 
     @Before
     public void before() {
